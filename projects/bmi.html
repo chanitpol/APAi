@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เครื่องคำนวณ BMI</title>
+<style>
+body{font-family:system-ui,"Noto Sans Thai",sans-serif;max-width:420px;margin:40px auto;padding:0 20px;line-height:1.7}
+label{display:block;margin-top:14px;font-weight:600}
+input{width:100%;padding:8px;font-size:1rem}
+button{margin-top:18px;padding:10px 20px;font-size:1rem;cursor:pointer}
+#result{margin-top:20px;font-size:1.2rem;font-weight:700}
+</style>
+</head>
+<body>
+<h1>เครื่องคำนวณ BMI</h1>
+<label for="w">น้ำหนัก (กิโลกรัม)</label>
+<input id="w" type="number" min="1" step="0.1">
+<label for="h">ส่วนสูง (เซนติเมตร)</label>
+<input id="h" type="number" min="1" step="0.1">
+<button id="calc">คำนวณ</button>
+<p id="result" aria-live="polite"></p>
+<p><a href="../index.html">กลับหน้าหลัก</a></p>
+<script>
+document.getElementById("calc").addEventListener("click", function () {
+  var w = parseFloat(document.getElementById("w").value);
+  var h = parseFloat(document.getElementById("h").value) / 100;
+  var out = document.getElementById("result");
+  if (!w || !h) { out.textContent = "กรุณากรอกน้ำหนักและส่วนสูงให้ครบ"; return; }
+  var bmi = w / (h * h);
+  var level = bmi < 18.5 ? "ต่ำกว่าเกณฑ์" : bmi < 23 ? "ปกติ" : bmi < 25 ? "น้ำหนักเกิน" : "อ้วน";
+  out.textContent = "BMI = " + bmi.toFixed(1) + " (" + level + ")";
+});
+</script>
+</body>
+</html>
