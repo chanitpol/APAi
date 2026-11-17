@@ -2,7 +2,7 @@
 
 เว็บไซต์แฟ้มสะสมผลงาน (e-Portfolio) สร้างด้วย HTML, CSS และ JavaScript เผยแพร่ผ่าน GitHub Pages
 
-**เว็บไซต์:** https://[ชนิตพล].github.io/[repository]/
+**เว็บไซต์:** https://[chanitpol].github.io/[repository]/
 
 ## เนื้อหาในเว็บไซต์
 
