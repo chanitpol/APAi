@@ -1,8 +1,8 @@
-# e-Portfolio ของ [ชนิตพล ภูเวียง]
+# e-Portfolio ของ ชนิตพล ภูเวียง
 
 เว็บไซต์แฟ้มสะสมผลงาน (e-Portfolio) สร้างด้วย HTML, CSS และ JavaScript เผยแพร่ผ่าน GitHub Pages
 
-**เว็บไซต์:** https://[chanitpol].github.io/[repository]/
+**เว็บไซต์:** https://[chanitpol].github.io/API/
 
 ## เนื้อหาในเว็บไซต์
 
